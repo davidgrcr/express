@@ -1,0 +1,29 @@
+extends layout
+
+block head
+    - var active = 'order'
+
+block content
+        h1 Realiza tu pedido
+        form(id="", method="POST", action="/order/submit")
+
+                input.form-control(type="hidden", name="customer",value = '#{user._id}')
+
+                .form-group
+                    label(for='inputName') Usuario
+                    input#inputName.form-control(type="text", name="name", value="#{user.username}", disabled='true')
+                .form-group
+                    label(for='inputEmail') Email
+                    input#inputEmail.form-control(type="email", name="email", value="#{user.email}")   
+                .form-group
+                    label(for='inputPizza') Pizza
+                    select#inputPizza.form-control(name="pizza")
+                        option Margarita
+                        option 4 Quesos
+                        option Barbacoa         
+                .checkbox
+                    label
+                        input(type="checkbox", name="email_on_ready")        
+                        | Enviar email cuando mi pedido este listo       
+                
+                button.btn.btn-lg.btn-default(type="submit") Crear pedido
