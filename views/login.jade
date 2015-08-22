@@ -1,18 +1,22 @@
 extends layout
 
 block head
-	- var active = 'login'
+    - var active = 'login'
 
 block content
-		h1 Iniciar Sesión
-		form(id="", method="POST", action="/user/auth")
-			.form-group
-				label(for='inputUser') Usuario
-				input#inputUser.form-control(type="text", placeholder="Introduzca su usuario", name="user")
-			.form-group
-				label(for='inputPassword') Contraseña
-				input#inputPassword.form-control(type="password", placeholder="*******", name="password")
-			| ¿ No tienes una cuena? Regístrate 
-			a(href='/user/register') aquí.
-			br/
-			button.btn.btn-lg.btn-default(type="submit") Iniciar sesión
+    .row
+        .col-md-4
+        .col-md-4
+            h1 Iniciar Sesión
+            form(id="", method="POST", action="/user/auth")
+                .form-group
+                    label(for='inputUser') Usuario
+                    input#inputUser.form-control(type="text", placeholder="Introduzca su usuario", name="user")
+                .form-group
+                    label(for='inputPassword') Contraseña
+                    input#inputPassword.form-control(type="password", placeholder="*******", name="password")
+                p
+                    em ¿ No tienes una cuena? Regístrate
+                        a(href='/user/register')  aquí.
+                button.btn.btn-lg.btn-default(type="submit") Iniciar sesión
+        .col-md-4

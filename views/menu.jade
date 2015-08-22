@@ -20,9 +20,9 @@ nav.navbar.navbar-inverse.navbar-fixed-top
             li(class = active == 'order' ? 'active' : 'normal')
               a(href='/order') Pedido
             | 
-            li(class = active == 'admin' ? 'active' : 'normal')
-              a(href='/admin') Admin
-            | 
+            //li(class = active == 'admin' ? 'active' : 'normal')
+            //  a(href='/admin') Admin
+            //|
             if user             
               li
                 a Hola #{user.username}
