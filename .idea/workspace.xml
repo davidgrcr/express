@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="64799170-3dc4-41ae-af20-ab2e88e0ddb4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/menu.jade" afterPath="$PROJECT_DIR$/views/menu.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/user.model.js" afterPath="$PROJECT_DIR$/models/user.model.js" />
-    </list>
+    <list default="true" id="64799170-3dc4-41ae-af20-ab2e88e0ddb4" name="Default" comment="" />
     <ignored path="app.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
