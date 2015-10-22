@@ -19,3 +19,7 @@ https://github.com/Unitech/pm2
 
 //para mails
 https://github.com/andris9/Nodemailer
+
+Start en modo debug
+-------------------
+DEBUG=app:* nodemon
