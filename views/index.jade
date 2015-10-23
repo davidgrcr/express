@@ -1,14 +1,16 @@
 extends layout
 
 block head
-   - var active = 'index'
+    - var active = 'index'
 
 block content   
-  .container
-      .starter-template
-        h1 Bienvenidos a Pizzeria Manresa
-        |         
-        p.lead Haga su pedido online
-        include starter_carousel
+    .container
+        .starter-template
+            h1 Bienvenidos a PIZZA PLANET
+
+            p.lead Haga su pedido online
+            img#logo_pizza.img-responsive(src='images/pizza.jpg', alt='logo pizza')
+            //include starter_carousel
     // /.container
+
 

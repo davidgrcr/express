@@ -14,7 +14,7 @@ var transporter = nodemailer.createTransport({
 });
 
 var mailOptions = {
-    from: 'Pizzeria Manresa ✔ davidgrcr@gmail.com', // sender address
+    from: 'PIZZA PLANET ✔ davidgrcr@gmail.com', // sender address
     to: '', // list of receivers
     subject: 'Su pedido esta listo ✔', // Subject line
     text: 'Hello world ✔', // plaintext body

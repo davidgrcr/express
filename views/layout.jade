@@ -7,13 +7,27 @@ html
 
         link(rel='stylesheet', href='/stylesheets/style.css')
 
-        script(src='https://code.jquery.com/jquery-2.1.4.min.js')
-
-        script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js')
-
         block head
     body
         include menu
         .container
             block content
 
+
+    <!-- Include the core jQuery library -->
+    script(src='https://code.jquery.com/jquery-2.1.4.min.js')
+
+    <!-- Include the core Bootstrap library -->
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js')
+
+    <!-- Include the core AngularJS library -->
+    script(src='/lib/angular/angular.min.js')
+
+    <!-- Include the AngularJS routing library -->
+    script(src='/lib/angular-route/angular-route.min.js')
+
+    <!-- Modules -->
+    script(src='/application.js')
+
+    <!-- Controllers -->
+    <!-- Services -->

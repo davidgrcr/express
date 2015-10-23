@@ -28,6 +28,8 @@ app.use(session({secret:'mysecrectkey'}));
 app.use(passport.initialize());
 app.use(passport.session());
 
+app.use(express.static('./public'));
+
 function ensureAuthenticated(req, res, next) {
   if(req.isAuthenticated()) return next();
   return res.redirect('user/login');
